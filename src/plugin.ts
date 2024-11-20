@@ -1,18 +1,50 @@
-import type { FastifyPluginAsync } from 'fastify'
-import type { FastifyPkgPlaceholderOptions } from './types'
+import type { FastifyPluginAsync, FastifyRequest } from 'fastify'
+import type { FastifyTMArOptions } from './types'
+import { parse, validate } from '@telegram-apps/init-data-node'
 import fp from 'fastify-plugin'
+import { InvalidAuthData, InvalidAuthType, MissingBotTokenError } from './errors'
 
-const plugin: FastifyPluginAsync<FastifyPkgPlaceholderOptions> = async (
+const plugin: FastifyPluginAsync<FastifyTMArOptions> = async (
   fastify,
   options,
 ) => {
-  fastify.decorate('foo', () => {
-    // eslint-disable-next-line no-console
-    console.log('👍', options)
-  })
+  const { botToken, decoratorName = 'tmaInitData' } = options
+
+  if (!botToken) {
+    throw new MissingBotTokenError()
+  }
+
+  const tmaDecorator = {
+    validate,
+  }
+
+  fastify.decorate('tma', tmaDecorator)
+
+  fastify.decorateRequest(decoratorName, null)
+  fastify.decorateRequest('tmaValidate', requestValidate)
+
+  function requestValidate(this: FastifyRequest) {
+    const [authType, authData = ''] = (this.headers.authorization || '').split(' ')
+
+    if (authType === 'tma') {
+      try {
+        fastify.tma.validate(authData, botToken, {
+          expiresIn: 3600,
+        })
+
+        this.tmaInitData = parse(authData)
+      }
+      catch (e) {
+        throw new InvalidAuthData({ cause: e })
+      }
+    }
+    else {
+      throw new InvalidAuthType()
+    }
+  }
 }
 
-export const fastifyPkgPlaceholder = fp(plugin, {
+export const fastifyTMA = fp(plugin, {
   fastify: '5.x',
-  name: 'pkg-placeholder',
+  name: 'fastify-tma',
 })

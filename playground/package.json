@@ -6,6 +6,6 @@
   },
   "dependencies": {
     "fastify": "latest",
-    "pkg-placeholder": "latest"
+    "fastify-tma": "latest"
   }
 }

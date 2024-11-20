@@ -1,2 +1,2 @@
-export { fastifyPkgPlaceholder } from './plugin'
-export type { FastifyPkgPlaceholderOptions } from './types'
+export { fastifyTMA } from './plugin'
+export type { FastifyTMArOptions } from './types'
