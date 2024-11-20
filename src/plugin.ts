@@ -2,7 +2,7 @@ import type { FastifyPluginAsync, FastifyRequest } from 'fastify'
 import type { FastifyTMArOptions } from './types'
 import { parse, validate } from '@telegram-apps/init-data-node'
 import fp from 'fastify-plugin'
-import { InvalidAuthData, InvalidAuthType, MissingBotTokenError } from './errors'
+import { InvalidAuthDataError, InvalidAuthTypeError, MissingBotTokenError } from './errors'
 
 const plugin: FastifyPluginAsync<FastifyTMArOptions> = async (
   fastify,
@@ -35,11 +35,11 @@ const plugin: FastifyPluginAsync<FastifyTMArOptions> = async (
         this.tmaInitData = parse(authData)
       }
       catch (e) {
-        throw new InvalidAuthData({ cause: e })
+        throw new InvalidAuthDataError({ cause: e })
       }
     }
     else {
-      throw new InvalidAuthType()
+      throw new InvalidAuthTypeError()
     }
   }
 }
