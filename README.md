@@ -6,7 +6,7 @@
 [![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
 
-Fastify plugin for Telegram Mini Apps integration. Provides secure auth validation, type-safe decorators, and utilities for building Telegram Mini Apps backend with Fastify.
+Fastify plugin for [Telegram Mini Apps](https://docs.telegram-mini-apps.com/) integration. Provides secure auth validation, type-safe decorators, and utilities for building Telegram Mini Apps backend with Fastify.
 
 ## Install
 
