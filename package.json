@@ -3,16 +3,16 @@
   "type": "module",
   "version": "0.0.1",
   "packageManager": "pnpm@9.13.1",
-  "description": "Fastify plugin for Telegram Mini Apps integration. Provides secure auth validation, type-safe decorators, and utilities for building Telegram Mini Apps backend with Fastify.",
+  "description": "Fastify plugin for Telegram Mini Apps integration.",
   "author": "Viktor Zdorovtsev",
   "license": "MIT",
   "funding": "https://github.com/sponsors/blasdfaa",
-  "homepage": "https://github.com/blasdfaa/fastify-ts-plugin-starter#readme",
+  "homepage": "https://github.com/blasdfaa/fastify-tma#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/blasdfaa/fastify-ts-plugin-starter.git"
+    "url": "git+https://github.com/blasdfaa/fastify-tma.git"
   },
-  "bugs": "https://github.com/blasdfaa/fastify-ts-plugin-starter/issues",
+  "bugs": "https://github.com/blasdfaa/fastify-tma/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
