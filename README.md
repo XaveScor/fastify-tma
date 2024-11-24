@@ -85,13 +85,13 @@ export default async function (fastify, opts) {
 
 Make sure that you also check [@fastify/auth](https://github.com/fastify/fastify-auth) plugin for composing more complex strategies.
 
-[npm-version-src]: https://img.shields.io/npm/v/fastify-tma?style=flat&colorA=18181B&colorB=F0DB4F
+[npm-version-src]: https://img.shields.io/npm/v/fastify-tma?style=flat&colorA=18181B&colorB=3e63dd
 [npm-version-href]: https://npmjs.com/package/fastify-tma
-[npm-downloads-src]: https://img.shields.io/npm/dm/fastify-tma?style=flat&colorA=18181B&colorB=F0DB4F
+[npm-downloads-src]: https://img.shields.io/npm/dm/fastify-tma?style=flat&colorA=18181B&colorB=3e63dd
 [npm-downloads-href]: https://npmjs.com/package/fastify-tma
-[bundle-src]: https://img.shields.io/bundlephobia/minzip/fastify-tma?style=flat&colorA=18181B&colorB=F0DB4F
+[bundle-src]: https://img.shields.io/bundlephobia/minzip/fastify-tma?style=flat&colorA=18181B&colorB=3e63dd
 [bundle-href]: https://bundlephobia.com/result?p=fastify-tma
-[license-src]: https://img.shields.io/github/license/blasdfaa/fastify-tma.svg?style=flat&colorA=18181B&colorB=F0DB4F
+[license-src]: https://img.shields.io/github/license/blasdfaa/fastify-tma.svg?style=flat&colorA=18181B&colorB=3e63dd
 [license-href]: https://github.com/blasdfaa/fastify-tma/blob/main/LICENSE
-[jsdocs-src]: https://img.shields.io/badge/jsDocs.io-reference-18181B?style=flat&colorA=18181B&colorB=F0DB4F
+[jsdocs-src]: https://img.shields.io/badge/jsDocs.io-reference-18181B?style=flat&colorA=18181B&colorB=3e63dd
 [jsdocs-href]: https://www.jsdocs.io/package/fastify-tma
