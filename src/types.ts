@@ -13,7 +13,7 @@ declare module 'fastify' {
   }
 }
 
-export interface FastifyTMArOptions {
+export interface FastifyTMAOptions {
   botToken: string
   /** @default 'tmaInitData'  */
   decoratorName?: string

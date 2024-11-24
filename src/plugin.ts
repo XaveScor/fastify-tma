@@ -1,10 +1,10 @@
 import type { FastifyPluginAsync, FastifyRequest } from 'fastify'
-import type { FastifyTMArOptions } from './types'
+import type { FastifyTMAOptions } from './types'
 import { parse, validate } from '@telegram-apps/init-data-node'
 import fp from 'fastify-plugin'
 import { InvalidAuthDataError, InvalidAuthTypeError, MissingBotTokenError } from './errors'
 
-const plugin: FastifyPluginAsync<FastifyTMArOptions> = async (
+const plugin: FastifyPluginAsync<FastifyTMAOptions> = async (
   fastify,
   options,
 ) => {

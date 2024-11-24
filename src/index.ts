@@ -1,2 +1,2 @@
 export { fastifyTMA } from './plugin'
-export type { FastifyTMArOptions } from './types'
+export type { FastifyTMAOptions } from './types'
