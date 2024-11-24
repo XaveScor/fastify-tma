@@ -3,8 +3,8 @@
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![bundle][bundle-src]][bundle-href]
-[![JSDocs][jsdocs-src]][jsdocs-href]
 [![License][license-src]][license-href]
+[![JSDocs][jsdocs-src]][jsdocs-href]
 
 Fastify plugin for [Telegram Mini Apps](https://docs.telegram-mini-apps.com/) integration. Provides secure auth validation, type-safe decorators, and utilities for building Telegram Mini Apps backend with Fastify.
 
@@ -85,12 +85,13 @@ export default async function (fastify, opts) {
 
 Make sure that you also check [@fastify/auth](https://github.com/fastify/fastify-auth) plugin for composing more complex strategies.
 
+[npm-version-src]: https://img.shields.io/npm/v/fastify-tma?style=flat&colorA=18181B&colorB=F0DB4F
 [npm-version-href]: https://npmjs.com/package/fastify-tma
-[npm-downloads-src]: https://img.shields.io/npm/dm/fastify-tma?style=flat&colorA=080f12&colorB=1fa669
+[npm-downloads-src]: https://img.shields.io/npm/dm/fastify-tma?style=flat&colorA=18181B&colorB=F0DB4F
 [npm-downloads-href]: https://npmjs.com/package/fastify-tma
-[bundle-src]: https://img.shields.io/bundlephobia/minzip/fastify-tma?style=flat&colorA=080f12&colorB=1fa669&label=minzip
+[bundle-src]: https://img.shields.io/bundlephobia/minzip/fastify-tma?style=flat&colorA=18181B&colorB=F0DB4F
 [bundle-href]: https://bundlephobia.com/result?p=fastify-tma
-[license-src]: https://img.shields.io/github/license/blasdfaa/fastify-tma.svg?style=flat&colorA=080f12&colorB=1fa669
+[license-src]: https://img.shields.io/github/license/blasdfaa/fastify-tma.svg?style=flat&colorA=18181B&colorB=F0DB4F
 [license-href]: https://github.com/blasdfaa/fastify-tma/blob/main/LICENSE
-[jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-080f12?style=flat&colorA=080f12&colorB=1fa669
+[jsdocs-src]: https://img.shields.io/badge/jsDocs.io-reference-18181B?style=flat&colorA=18181B&colorB=F0DB4F
 [jsdocs-href]: https://www.jsdocs.io/package/fastify-tma
