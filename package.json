@@ -1,7 +1,7 @@
 {
   "name": "fastify-tma",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "packageManager": "pnpm@9.13.1",
   "description": "Fastify plugin for Telegram Mini Apps integration. Provides secure auth validation, type-safe decorators, and utilities for building Telegram Mini Apps backend with Fastify.",
   "author": "Viktor Zdorovtsev",
