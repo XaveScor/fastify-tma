@@ -1,7 +1,7 @@
 {
   "name": "fastify-tma",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "packageManager": "pnpm@9.13.1",
   "description": "Fastify plugin for Telegram Mini Apps integration.",
@@ -27,9 +27,7 @@
     "dev": "vitest dev",
     "lint": "eslint .",
     "prepare": "lefthook install",
-    "prepack": "pnpm build",
-    "prepublishOnly": "pnpm lint && pnpm test",
-    "release": "pnpm test && bumpp && pnpm publish ./dist",
+    "release": "pnpm test && bumpp && pnpm build && pnpm publish ./dist",
     "test": "pnpm test:unit && pnpm test:types",
     "test:unit": "vitest --run",
     "test:types": "tsc --noEmit"
