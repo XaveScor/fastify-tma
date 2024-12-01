@@ -40,8 +40,8 @@ importers:
         specifier: 1.8.2
         version: 1.8.2
       smartbundle:
-        specifier: ^0.11.0
-        version: 0.11.0(@types/node@20.17.6)
+        specifier: ^0.11.1
+        version: 0.11.1(@babel/core@7.26.0)(@types/node@20.17.6)(typescript@5.6.3)
       typescript:
         specifier: 5.6.3
         version: 5.6.3
@@ -2068,9 +2068,17 @@ packages:
   slashes@3.0.12:
     resolution: {integrity: sha512-Q9VME8WyGkc7pJf6QEkj3wE+2CnvZMI+XJhwdTPR8Z/kWQRXi7boAWLDibRPyHRTUTPx5FaU7MsyrjI3yLB4HA==}
 
-  smartbundle@0.11.0:
-    resolution: {integrity: sha512-tpLvu8zHuFiVlR+4Z7y/RgsSDNaTyD58GYXqT55+XfYNgWJEeaD1CbedVx1W8kB7vXHebomqf2XB/vct75q/sA==}
+  smartbundle@0.11.1:
+    resolution: {integrity: sha512-OJKnBN447Zp6Qunkk0E15VOURmL3dEsWPGw2kondSPam3ZHKvzHvxbz7e01ZIQI61kCXl3F5dy9ibjzkQjk/IA==}
     hasBin: true
+    peerDependencies:
+      '@babel/core': ^7.26.0
+      typescript: ^5.6.3
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      typescript:
+        optional: true
 
   sonic-boom@4.2.0:
     resolution: {integrity: sha512-INb7TM37/mAcsGmc9hyyI6+QR3rR1zVRu36B0NeGXKnOOLiZOfER5SA+N7X7k3yUYRzLWafduTDvJAfDswwEww==}
@@ -4631,7 +4639,7 @@ snapshots:
 
   slashes@3.0.12: {}
 
-  smartbundle@0.11.0(@types/node@20.17.6):
+  smartbundle@0.11.1(@babel/core@7.26.0)(@types/node@20.17.6)(typescript@5.6.3):
     dependencies:
       semver: 7.6.3
       vite: 5.4.11(@types/node@20.17.6)
@@ -4648,7 +4656,6 @@ snapshots:
       - sass-embedded
       - stylus
       - sugarss
-      - supports-color
       - terser
 
   sonic-boom@4.2.0:
